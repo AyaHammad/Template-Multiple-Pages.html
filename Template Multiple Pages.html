@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+
+	body{
+		margin: 0;
+		padding: 0;
+		font-family:monospace;
+	}
+
+	.navbar{
+		width: 100%;
+		height: 50px;
+		background:#360836;
+	}
+
+	.navbar ul{
+		list-style: none;
+        text-align: center;
+        line-height: 50px;
+	}
+
+	.navbar ul li{
+		display: inline-block;
+	}
+
+	.navbar ul li a{
+		color: #ff0048;
+		text-decoration: none;
+		margin-left: 16px;
+		font-size: 20px;
+		padding: 12px
+	}
+
+	.navbar ul li .active{
+		color: white;
+	}
+
+	.web{
+		width: 100%;
+		height: 600px;
+		background:url("https://p0.pikist.com/photos/679/933/afterglow-mountain-sunset-snow-autumn-sun-red-alpine.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		padding-top:50px;
+		position: relative;
+	}
+
+	.web div.folk{
+		padding-bottom: 80px;
+		margin-top: 80px;
+	}
+
+	.web .folk h2{
+		margin: 0;
+		padding:0;
+		font-size: 50px;
+		color: white;
+		text-transform: uppercase;
+	}
+     
+     .web div.folk p{
+     	letter-spacing: 10px;
+     	font-size: 25px;
+     	color: #fff;
+     }
+
+     .web div.dream p{
+     	color: #fff;
+     	font-size: 25px;
+     }
+
+     .web div.work{
+     	position: absolute;
+     	bottom: 0;
+     	color: #fff;
+     	left: 40%;
+     	background:#ff0048;
+     	padding: 15px;
+     	width: 250px;
+     	font-size: 20px;
+     }
+
+     .web div.work:after{
+     	content: "";
+     	border-top:20px solid #ff0048; 
+     	border-right:20px solid transparent;
+     	border-left: 20px solid transparent;
+     	position: relative;
+     	top: 55px;
+     	left: -60px;
+
+     }
+
+     .image{
+     	width: 100%;
+        text-align: center;
+     }
+
+     .image div.img{
+     	width: 25%;
+     	height: 252px;
+     	background:url("https://upload.wikimedia.org/wikipedia/commons/e/ee/Apples.jpg");  
+     	display: inline-block;   	
+
+     }
+
+     .image div.img div.over{
+     	width: 100%;
+     	height: 100%;
+     	background:rgba(0,0,0,0.5);
+     	opacity: 0;
+     }
+
+     .image div.img:hover .over{
+        opacity: 1;
+     }
+
+		.meet{
+			width: 100%;
+			height: auto;
+			position: relative;
+			text-align: center;padding-bottom: 20px;
+			background:#f5f5f5;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		.meet div.head{
+			position: absolute;
+			top: 0;
+			background:#f50;
+			width: 100%;
+			height: 50px;text-align: center;
+			color: #fff;
+			font-size: 20px;
+			line-height: 50px;
+		}
+		
+		.meet div.head:after{
+		content: "";
+     	border-top:20px solid #f50; 
+     	border-right:20px solid transparent;
+     	border-left: 20px solid transparent;
+     	position: relative;
+     	top: 55px;
+     	left: -70px;
+
+     }
+
+     .meet h2{
+     	margin: 0;
+     	padding: 90px;
+     	color: #ff0048;
+     	font-size: 40px;
+     }
+
+     .meet div.meet-image h3{
+     	color: #ff0048;
+     	font-size: 28px;
+     	letter-spacing: 5px;
+     }
+
+     .meet div.meet-image{
+     	display: inline-block;
+     	margin-top: 15px;
+     }
+
+     .meet button{
+     	width: 150px;
+     	background:black;
+     	border: 0;
+     	color: #fff;
+     	padding: 10px;
+     	cursor: pointer;
+     }
+
+     .end{
+     	width: 100%;
+     	height: 1000px;
+     	padding-top: 7%;
+     	background:url("https://www.mexatk.com/wp-content/uploads/2015/08/%D9%86%D8%AC%D9%88%D9%85-HD-2.jpg");
+        text-align: center;
+     }
+
+     .end div.content{
+     	width: 400px;
+     	display: inline-block;
+     	color: #fff;
+     	margin-top: 8%;
+     	font-size: 20px;
+     }
+
+          .end div.content h2{
+          	margin: 0;
+          	padding: 0;
+          }
+
+          .end div.content p{
+          	padding-right: 20px
+          }
+
+          .end button{
+          	margin-top: 8%;
+          	background:#fff;
+          	border: 0;
+          	width: 150px;
+          	padding: 15px;
+          	color: black;
+          	cursor: pointer;
+
+          }
+
+          .end div.boll{
+          	text-align: center;
+          	margin-top: 10%
+          }
+
+          .end div.boll span{
+          	width: 10px;
+          	height: 10px;
+          	display: inline-block;
+          	background:#fff;
+          	margin-bottom: 2%
+          }
+
+            .end div.boll span:hover{
+            	background:#ff0048;
+            }
+
+            .footer{
+            	width: 100%;
+            	height: 80px;
+            	text-align: center;
+            	background:#f5f5f5;
+            	line-height: 80px;
+            	font-size: 25px;
+            }
+
+
+	
+</style>
+</head>
+<body>
+	<div class="navbar">
+	<ul>
+		<li><a  class="active" href="Template Multiple Pages.html">Home</a></li>
+		<li><a href="co.html">Contact</a></li>
+		<li><a href="Book Online.html">Book Online</a></li>
+
+     </ul>
+	</div>
+
+
+<div class="web">
+	<div class="folk">
+		<h2>web folk</h2>
+		<p>web Design Studio</p>
+	</div>
+		<div class="dream">
+			<p>we dream , explore , create and craft <br>
+			progressive digital expreince</p>
+		</div>
+		<div class="bollet">
+			<span></span>
+			<span></span>
+			<span></span>	
+		</div>
+			<div class="work">	
+			work & Client			
+			</div>
+	
+</div>
+
+<div class="image">
+	<div class="img">
+		<div class="over">
+			</div>
+		</div>
+	<div class="img">
+		<div class="over">
+			</div>
+		</div>
+	<div class="img">
+		<div class="over">
+			</div>
+		</div>
+			<div class="img">
+		<div class="over">
+			</div>
+		</div>
+			<div class="img">
+		<div class="over">
+			
+		</div>
+	</div>
+	<div class="img">
+		<div class="over">
+			</div>
+		</div>
+		<div class="img">
+		<div class="over">
+			</div>
+		</div>
+		<div class="img">
+		<div class="over">
+			</div>
+		</div>
+		<div class="img">
+		<div class="over">
+			</div>
+		</div>
+	<div class="clear">
+	</div>
+</div>
+
+<div class="meet">
+	<div class="head">Web Design</div>
+
+	<h2>Meet The Folks:</h2>
+
+	<div class="meet-image">
+		<img src="https://www.ecchr.eu/fileadmin/_processed_/3/e/csm_Andreas_Schueller_b4f9f25554.jpg" >
+		<h3>Andreas</h3>
+		<p>Developer</p>
+		
+	</div>
+		<div class="meet-image">
+		<img src="https://www.ecchr.eu/fileadmin/_processed_/3/e/csm_Andreas_Schueller_b4f9f25554.jpg" >
+		<h3>Andreas</h3>
+		<p>Developer</p>
+		
+	</div>
+		<div class="meet-image">
+		<img src="https://www.ecchr.eu/fileadmin/_processed_/3/e/csm_Andreas_Schueller_b4f9f25554.jpg" >
+		<h3>Andreas</h3>
+		<p>Developer</p>
+		
+	</div>
+		<div class="meet-image">
+		<img src="https://www.ecchr.eu/fileadmin/_processed_/3/e/csm_Andreas_Schueller_b4f9f25554.jpg" >
+		<h3>Andreas</h3>
+		<p>Developer</p>
+		
+	</div>
+	<div class="clear">
+		
+	</div>
+
+	<button>Contact Us</button>
+</div>
+
+<div class="end">
+	<div class="content">
+		<h2>what we do</h2>
+		<p>we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft</p>
+		
+	</div>
+	<div class="content">
+		<h2>what we do</h2>
+		<p>we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft</p>
+		
+	</div>
+<br>
+	<div class="content">
+		<h2>what we do</h2>
+		<p>we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft</p>
+		
+	</div>
+	<div class="content">
+		<h2>what we do</h2>
+		<p>we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft we dream , explore , create and craft</p>
+		
+	</div>
+	<div class="clear"></div>
+	<button>Contact Us</button>
+	
+	<div class="boll">
+		<span></span>
+		<span></span>
+		<span></span>
+</div>
+
+<div class="footer">
+	&copy; CopyRight wix.com
+	
+</div>
+</div>
+</body>
+</html>
